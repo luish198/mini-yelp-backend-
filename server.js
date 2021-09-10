@@ -56,6 +56,6 @@ if(!err){
 
 
 
-app.listen(proecess.env.PORT || port,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log("server running on port"+port)
 })
