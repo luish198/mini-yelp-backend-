@@ -15,7 +15,7 @@ const app = express()
 
 app.use(cors())
 
-const PORT = process.env.PORT || 3000
+const port = 3000
 
 /*var pool = mysql.createPool({
     connectionLimit : 10,
@@ -56,6 +56,6 @@ if(!err){
 
 
 
-app.listen(PORT,()=>{
-    console.log("server running on port"+PORT)
+app.listen(proecess.env.PORT || port,()=>{
+    console.log("server running on port"+port)
 })
