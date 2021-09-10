@@ -11,8 +11,8 @@ import cuisineRouter from "./routes/cuisine.js";
 
 dotenv.config()
 
-//const port = 3000
-const PORT = process.env.PORT || 5000;
+const port = 3000
+//const PORT = process.env.PORT || 5000;
 
 const app = express()
 
@@ -60,6 +60,6 @@ if(!err){
 
 
 
-app.listen(PORT || 5000,()=>{
-    console.log("server running on port"+PORT)
+app.listen(process.env.PORT || 3000,()=>{
+    console.log("server running on port"+port)
 })
