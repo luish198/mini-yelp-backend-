@@ -5,7 +5,6 @@ dotenv.config()
 
 var pool = mysql.createPool({
     connectionLimit : 10,
-    //host     : '107.6.183.178',
     host     : process.env.HOST,
     port     : process.env.DB_PORT,
     user     : process.env.USER,
