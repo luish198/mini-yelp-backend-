@@ -7,7 +7,7 @@ import cuisineRouter from "./routes/cuisine.js";
 import cities2021Router from "./routes/cities.js";
 import newcityRouter from "./routes/cities.js";
 import newrestaurantRouter from "./routes/restaurants.js";
-import filterRouter from "./routes/cuisine.js";
+import filterRouter from "./routes/filters.js";
 
 
 
@@ -31,7 +31,7 @@ app.use('/newcity',newcityRouter )
 app.use('/newrestaurant',newrestaurantRouter )
 
 //mixfilter test by LH
-app.use('/filter',filterRouter)
+app.use('/filters',filterRouter)
 
 
 app.listen(process.env.PORT || 3000,()=>{
